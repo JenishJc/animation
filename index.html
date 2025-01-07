@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Document</title>
 </head>
@@ -35,49 +33,91 @@
         </nav>
     </header>
     <section class="banner">
-        <div class="overlay-gradient-top"></div>
-        <div class="mask hero-mask"></div>
+        <div class="overlay-gradient-top absolute inset-0"></div>
         <div class="media-dynamic d-desktop">
             <video autoplay loop muted>
                 <source src="/assets/videos/elementismp4.mp4" type="video/mp4">
             </video>
         </div>
-        <div id="owl-demo" class="owl-carousel owl-theme">
- 
-            <div class="item"><div><h2>Wellness • </h2></div></div>
-            <div class="item"><div><h2>Innovation •</h2></div></div>
-            <div class="item"><div><h2>Nature •</h2></div></div>
-            <div class="item"><div><h2>Community •</h2></div></div>
-            <div class="item"><div><h2>Wellness •</h2></div></div>
-            <div class="item"><div><h2>Innovation •</h2></div></div>
-            <div class="item"><div><h2>Nature •</h2></div></div>
-            <div class="item"><div><h2>Community •</h2></div></div>
-
+        <div class="relative h-5/6 overflow-hidden">
+            <div id="slider" class="absolute bottom-0 w-full whitespace-nowrap text-center uppercase">
+                <p id="first" class="m-0 text-white text-[150px] font-normal font-[basisMedium]">
+                    Wellness • Innovation • Nature • Community •
+                </p>
+              
+            </div>
+        </div>
+        <div class="relative flex m-[50px] items-center">
+            <div class="flex-grow border-t border-gray-400 "></div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="text-center">
+                <h5 class="m-0 text-white text-[30px] font-normal font-[basisMedium]">Scroll to Explore</h5>
+            </div>
           </div>
-        <div class="banner-bottom">
-            <hr class="solid">
-            <div class="bottom-section">
-                <div class="arrow-img">
-                    <svg data-v-b80dcc19="" width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="line icon" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.452431 10.9351C0.228003 10.7107 0.228003 10.3384 0.452431 10.114C0.676859 9.88959 1.04908 9.88959 1.27351 10.114L5.90394 14.7444L5.90393 0.819627C5.90393 0.655411 5.96962 0.513092 6.07362 0.409088C6.17763 0.305085 6.31995 0.239399 6.48416 0.2394C6.80164 0.239399 7.06439 0.502145 7.06439 0.819629L7.06439 14.7454L11.6957 10.114C11.9202 9.88959 12.2924 9.88959 12.5168 10.114C12.7412 10.3384 12.7412 10.7107 12.5168 10.9351L6.89516 16.5567C6.83478 16.6171 6.7637 16.6613 6.68769 16.6892C6.62419 16.7134 6.55556 16.7266 6.48417 16.7266C6.40304 16.7266 6.32548 16.7095 6.25498 16.6786C6.18898 16.6507 6.12737 16.61 6.07408 16.5567L0.452431 10.9351Z" fill="white"></path><path d="M0.452431 10.9351L0.31101 11.0765L0.452431 10.9351ZM5.90394 14.7444L6.10394 14.7444L6.10394 15.2273L5.76252 14.8859L5.90394 14.7444ZM5.90393 0.819627L5.70393 0.819627L5.90393 0.819627ZM6.48416 0.2394L6.48416 0.439399L6.48416 0.439399L6.48416 0.2394ZM7.06439 0.819629L7.26439 0.819629L7.06439 0.819629ZM7.06439 14.7454L7.20581 14.8868L6.86439 15.2282L6.86439 14.7454L7.06439 14.7454ZM12.5168 10.9351L12.6582 11.0765L12.5168 10.9351ZM6.89516 16.5567L6.75374 16.4153L6.89516 16.5567ZM6.68769 16.6892L6.61643 16.5023L6.6188 16.5014L6.68769 16.6892ZM6.48417 16.7266L6.48417 16.9266L6.48417 16.9266L6.48417 16.7266ZM6.25498 16.6786L6.33306 16.4945L6.33513 16.4954L6.25498 16.6786ZM6.07408 16.5567L6.2155 16.4153L6.07408 16.5567ZM0.593852 10.2554C0.447529 10.4018 0.447529 10.6474 0.593852 10.7937L0.31101 11.0765C0.00847696 10.774 0.00847663 10.2751 0.31101 9.9726L0.593852 10.2554ZM1.13209 10.2554C0.985764 10.1091 0.740175 10.1091 0.593852 10.2554L0.31101 9.9726C0.613542 9.67007 1.1124 9.67007 1.41493 9.9726L1.13209 10.2554ZM5.76252 14.8859L1.13209 10.2554L1.41493 9.9726L6.04536 14.603L5.76252 14.8859ZM6.10393 0.819627L6.10394 14.7444L5.70394 14.7444L5.70393 0.819627L6.10393 0.819627ZM6.21505 0.550509C6.14653 0.619029 6.10393 0.711249 6.10393 0.819627L5.70393 0.819627C5.70393 0.599572 5.79272 0.407154 5.9322 0.267667L6.21505 0.550509ZM6.48416 0.439399C6.37579 0.439399 6.28357 0.481989 6.21505 0.550509L5.9322 0.267667C6.07169 0.128181 6.26411 0.0393989 6.48416 0.0393996L6.48416 0.439399ZM6.86439 0.819629C6.86439 0.612602 6.69119 0.439399 6.48416 0.439399L6.48416 0.0393996C6.9121 0.0393988 7.26439 0.391688 7.26439 0.819629L6.86439 0.819629ZM6.86439 14.7454L6.86439 0.819629L7.26439 0.819629L7.26439 14.7454L6.86439 14.7454ZM11.8371 10.2554L7.20581 14.8868L6.92297 14.6039L11.5543 9.9726L11.8371 10.2554ZM12.3754 10.2554C12.2291 10.1091 11.9835 10.1091 11.8371 10.2554L11.5543 9.9726C11.8568 9.67006 12.3557 9.67006 12.6582 9.9726L12.3754 10.2554ZM12.3754 10.7937C12.5217 10.6474 12.5217 10.4018 12.3754 10.2554L12.6582 9.9726C12.9608 10.2751 12.9608 10.774 12.6582 11.0765L12.3754 10.7937ZM6.75374 16.4153L12.3754 10.7937L12.6582 11.0765L7.03658 16.6982L6.75374 16.4153ZM6.6188 16.5014C6.6685 16.4832 6.71458 16.4545 6.75374 16.4153L7.03658 16.6982C6.95498 16.7798 6.85891 16.8394 6.75657 16.8769L6.6188 16.5014ZM6.48417 16.5266C6.53058 16.5266 6.57509 16.518 6.61643 16.5023L6.75894 16.876C6.67329 16.9087 6.58055 16.9266 6.48417 16.9266L6.48417 16.5266ZM6.33513 16.4954C6.38115 16.5155 6.43147 16.5266 6.48417 16.5266L6.48417 16.9266C6.37461 16.9266 6.26982 16.9034 6.17482 16.8619L6.33513 16.4954ZM6.2155 16.4153C6.25009 16.4499 6.29003 16.4763 6.33305 16.4945L6.1769 16.8628C6.08794 16.8251 6.00465 16.7702 5.93266 16.6982L6.2155 16.4153ZM0.593852 10.7937L6.2155 16.4153L5.93266 16.6982L0.31101 11.0765L0.593852 10.7937Z" fill="white"></path></svg>
+    </section>
+    <section class="hero-img">
+        <div class="blocks-container top">
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+        </div>
+        <div class="blocks-container bottom">
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+            <div class="blocks-row"></div>
+
+        </div>
+        <div class="introduction flex flex-wrap p-10 justify-center items-center bg-[#30493d]">
+            <div class="image w-1/2 flex justify-center">
+                <img src="./assets/images/homepagee-1jpg.jpeg" alt="" class="h-[90%]"/>
+            </div>
+            <div class="content w-1/2 flex flex-col justify-center items-start gap-[70px] pl-[200px] ">
+                <div class="text-label flex items-center">
+                    <div class="icon mr-5">
+                        <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger" data-v-fcdb2cb5="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.94753e-05 1.20954V0H12.0661V1.46243L8.94753e-05 1.20954ZM8.94753e-05 14.7904V16H12.0661V14.5375L8.94753e-05 14.7904ZM0 8.73043V7.52255L5.19475 7.52089H5.90313H6.87124L12.066 7.52255V8.73043H0Z" fill="#D1CCBF"></path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h4 class="m-0">Wellness Sanctuary</h4>
+                    </div>
                 </div>
-                <div class="center-txt">
-                    <h5>
-                        A lifestyle revolution for a
-                        sustainable fulfilling future
-                    </h5>
+                
+                <div class="title-wrapper">
+                    <h2><span>Personalized</span> wellness,<br>
+                    innovation, and nature<br>meet in synergy<br>
+                    </h2>
                 </div>
-                <div class="scroll-txt">
-                    <h5>
-                        Scroll to Exploree
-                    </h5>
+                <div class="content-wrapper">
+                    <p>At ELEMENTIS, we use the Integrative
+                    Wellness approach, that considers
+                    psychological, physical, and nutritional
+                    aspects of your life to improve overall
+                    well-being and balance.</p>
                 </div>
+                <div class="btn border-b border-[#D1CCBF] pb-5">
+                    <a href="#" class="inline-flex items-center m-0 text-[#D1CCBF] text-[24px] font-normal font-[basisMedium]">
+                        Discover ELEMENTIS
+                        <span class="icon-wrapper ml-2 flex items-center ml-[128px]">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9966 8.5308C11.9966 8.84819 11.7334 9.11139 11.416 9.11139C11.0986 9.11139 10.8354 8.84819 10.8354 8.5308V1.98239L0.989067 11.8287C0.872949 11.9448 0.725867 11.999 0.578784 11.999C0.431702 11.999 0.284619 11.9448 0.168502 11.8287C-0.0559931 11.6042 -0.0559931 11.2326 0.168502 11.0082L10.0155 1.16118H3.46578C3.14839 1.16118 2.88519 0.897979 2.88519 0.58059C2.88519 0.263201 3.14839 0 3.46578 0H11.416C11.5014 0 11.5828 0.0190504 11.6563 0.0530812C11.7183 0.0808598 11.7763 0.119992 11.8267 0.170477C11.8841 0.227843 11.9268 0.294813 11.9549 0.366478C11.9817 0.432929 11.9966 0.505232 11.9966 0.58059V8.5308Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                
             </div>
         </div>
         
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 <script src="app.js"></script>
 
 </html>
